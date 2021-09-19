@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <title>Challenge Responsive</title>
+    <style>
+        * {
+            transition: all 0.2s ease-in;
+        }
+        
+        body {
+            background-color: black;
+        }
+        
+        main {
+            margin: 0px auto;
+            width: 1280px;
+        }
+        
+        div.logo {
+            background: url(imgs/logo.png) no-repeat center;
+            background-size: contain;
+            height: 240px;
+        }
+        
+        ul li {
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            margin-left: 10px;
+            width: 290px;
+            display: inline-block;
+            border: 2px solid #dbc06f;
+            overflow: hidden;
+        }
+        
+        li p {
+            background-color: rgb(203, 162, 84, 0.5);
+            position: absolute;
+            width: 99.9%;
+            height: 40px;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            margin-top: 260px;
+            font-family: arial black;
+        }
+        
+        li p {
+            transition: transform .5s, ease-in;
+        }
+        
+        li p:hover {
+            transform: scale(1.01);
+            background-color: #dfd585;
+            opacity: 0.4;
+            transform: translatey(-50px);
+            height: 100px;
+        }
+        
+        li.img1 {
+            background: url(imgs/lee.jpg) no-repeat;
+            background-size: cover;
+        }
+        
+        li.img2 {
+            background: url(imgs/zed.jpg) no-repeat;
+            background-size: cover;
+        }
+        
+        li.img3 {
+            background: url(imgs/k6.jpg) no-repeat;
+            background-size: cover;
+        }
+        
+        li.img4 {
+            background: url(imgs/kalista.png) no-repeat;
+            background-size: cover;
+        }
+        
+        .item1 {
+            height: 300PX;
+            width: auto;
+            margin: 5px;
+            padding: 5px;
+            color: white;
+            border: 1px dashed white;
+            margin: 3.1em;
+        }
+        
+        #img1 {
+            width: 300px;
+            height: 135px;
+            float: left;
+            margin-right: 20px;
+        }
+        
+        #img1 {
+            background-image: url(imgs/kalista.png);
+            height: 300px;
+            width: 290;
+            background-size: cover;
+        }
+        
+        #img2 {
+            width: 300px;
+            height: 135px;
+            float: left;
+            margin-right: 20px;
+        }
+        
+        #img2 {
+            background-image: url(imgs/lee.jpg);
+            height: 300px;
+            width: 290;
+            background-size: contain;
+        }
+        
+        @media (max-width: 1290px) {
+            main {
+                width: 680px;
+                /* margin-left: 10px; */
+            }
+            section {
+                display: inline-block;
+                overflow: hidden;
+            }
+            section div#text {
+                overflow: scroll;
+                height: 325px;
+            }
+        }
+        
+        div#text p {
+            text-align: justify;
+            padding-right: 5px;
+        }
+        
+        @media (max-width: 690px) {
+            main {
+                width: 480px;
+                /* margin-left: 30px; */
+            }
+            div.logo {
+                align-items: center;
+                width: 450px;
+                background-position: center;
+                left: 50px;
+            }
+            ul {
+                margin-left: 30px;
+                align-items: center;
+            }
+            ul li {
+                width: 298px;
+            }
+            section {
+                height: 600px !important;
+                width: 300px !important;
+                display: block !important;
+                margin-left: 80px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="logo"></div>
+
+        <ul>
+            <li class="img1">
+                <P>LEE SIN</P>
+            </li>
+            <li class="img2">
+                <P>ZED</P>
+            </li>
+            <li class="img3">
+                <P>KHA'ZIX</P>
+            </li>
+            <li class="img4">
+                <P>KALISTA</P>
+            </li>
+        </ul>
+
+        <section class="item1">
+            <div id="img1"></div>
+            <div id="text">
+                <h2>HOLA MUNDO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eum officia laborum cumque fugit laboriosam, perspiciatis deserunt error, iure provident possimus non et, blanditiis est facere! Doloribus labore ex pariatur consectetur
+                    earum, maxime distinctio eum iste, voluptatibus iure, totam perspiciatis mollitia eligendi. Maxime atque aliquam inventore illo dicta voluptatem aut error fugiat vel quaerat, reprehenderit consequatur officiis, at neque fuga nam amet
+                    velit impedit ipsam eum laborum? Aliquid porro, nihil magni, aspernatur id voluptates sunt soluta reiciendis quasi qui possimus non, dolorum vitae omnis quod dicta placeat aliquam rerum fugiat totam repudiandae numquam tempore. Mollitia,
+                    commodi! Alias porro aliquam totam.</p>
+            </div>
+        </section>
+
+        <section class="item1">
+            <div id="img2"></div>
+            <div id="text">
+                <h2>HOLA MUNDO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eum officia laborum cumque fugit laboriosam, perspiciatis deserunt error, iure provident possimus non et, blanditiis est facere! Doloribus labore ex pariatur consectetur
+                    earum, maxime distinctio eum iste, voluptatibus iure, totam perspiciatis mollitia eligendi. Maxime atque aliquam inventore illo dicta voluptatem aut error fugiat vel quaerat, reprehenderit consequatur officiis, at neque fuga nam amet
+                    velit impedit ipsam eum laborum? Aliquid porro, nihil magni, aspernatur id voluptates sunt soluta reiciendis quasi qui possimus non, dolorum vitae omnis quod dicta placeat aliquam rerum fugiat totam repudiandae numquam tempore. Mollitia,
+                    commodi! Alias porro aliquam totam.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
